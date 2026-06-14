@@ -2,7 +2,12 @@ Care+ merupakan aplikasi berbasis website yang berfungsi untuk memberikan layana
 
 Sistem Care+ dirancang untuk mempermudah interaksi pengguna dengan tenaga kesehatan melalui website yang dibuat sesederhana dan semudah mungkin untuk dimengerti oleh pengguna. Website Care+ juga dibuat untuk mempermudah proses pencarian informasi dokter spesialis.
 
-Clarissa Aireen Thevania 120510240020 
-Rafi Najwan Abdallah 120510240035 
-Muthia Labibah 120510240044 
-Naisya Putri Aulia 120510240053
+Kelompok 5
+
+Clarissa Aireen Thevania [120510240020]
+
+Rafi Najwan Abdallah [120510240035]
+
+Muthia Labibah [120510240044]
+
+Naisya Putri Aulia [120510240053]
