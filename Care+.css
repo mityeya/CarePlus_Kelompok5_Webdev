@@ -681,6 +681,23 @@ textarea {
   border: 2px dashed var(--line);
 }
 
+.status-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 12px;
+}
+.status-badge.available { color: #16a34a; }
+.status-badge.unavailable { color: #dc2626; }
+
+/* Tombol saat disabled */
+.btn-disabled {
+  background-color: #cbd5e1 !important;
+  border-color: #cbd5e1 !important;
+  cursor: not-allowed;
+}
+
+
 /* =========================================================
    MODAL OVERLAY
 ========================================================= */
