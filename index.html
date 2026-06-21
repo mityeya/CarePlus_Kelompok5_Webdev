@@ -12,14 +12,22 @@
 <body>
 <header>
   <div class="navwrap">
-    <div class="logo" style="color: #2B6CB0;">
-        <img src="logo.png" alt="Logo Care+" class="logo-img">Care+</div>
-    <nav>
-      <button class="nav-link active" data-page="beranda">Beranda</button>
-      <button class="nav-link" data-page="dokter">Chat Dokter</button>
-      <button class="nav-link" data-page="reservasi">Reservasi Baru</button>
-      <button class="nav-link" data-page="riwayat-medis">Profil & Riwayat</button>
-    </nav>
+    <div class="logo" style="color: var(--primary);">
+        <img src="logo.png" alt="Logo Care+" class="logo-img">Care+
+    </div>
+    
+    <nav style="display: flex; align-items: center; gap: 15px;">
+  <button class="nav-link active" data-page="beranda">Beranda</button>
+  <button class="nav-link" data-page="dokter">Chat Dokter</button>
+  <button class="nav-link" data-page="reservasi">Reservasi Baru</button>
+  <button class="nav-link" data-page="riwayat-medis">Profil & Riwayat</button>
+
+  <div style="display: flex; gap: 8px; margin-left: 10px; padding-left: 15px; border-left: 1px solid var(--line);">
+    <div class="theme-box" onclick="changeTheme('theme-blue')" style="background:#2B6CB0;"></div>
+    <div class="theme-box" onclick="changeTheme('theme-green')" style="background:#276749;"></div>
+    <div class="theme-box" onclick="changeTheme('theme-purple')" style="background:#6B46C1;"></div>
+  </div>
+</nav>
   </div>
 </header>
 

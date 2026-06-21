@@ -465,3 +465,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+function changeTheme(themeName) {
+  // Hapus semua class theme yang ada
+  document.body.classList.remove('theme-blue', 'theme-green', 'theme-purple');
+  // Tambahkan class baru
+  document.body.classList.add(themeName);
+  // Simpan ke localStorage
+  localStorage.setItem('careplus-theme', themeName);
+}
+
+// Load tema saat aplikasi dimulai
+document.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem('careplus-theme') || 'theme-blue';
+  changeTheme(savedTheme);
+});

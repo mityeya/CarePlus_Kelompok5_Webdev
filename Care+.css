@@ -20,6 +20,27 @@
   --radius: 20px; /* Diperbesar mengikuti gaya referensi */
   --shadow: 0 4px 20px rgba(43, 108, 176, 0.08);
   --shadow-hover: 0 15px 40px rgba(43, 108, 176, 0.12);
+
+  /* Tema Biru (Default) */
+body.theme-blue {
+  --primary: #2B6CB0;
+  --primary-dark: #1A4B82;
+  --accent: #7FB8E6;
+}
+
+/* Tema Hijau (Forest) */
+body.theme-green {
+  --primary: #276749;
+  --primary-dark: #1C4532;
+  --accent: #9AE6B4;
+}
+
+/* Tema Ungu (Royal) */
+body.theme-purple {
+  --primary: #6B46C1;
+  --primary-dark: #4C1D95;
+  --accent: #D6BCFA;
+}
 }
 
 /* =========================================================
@@ -444,21 +465,20 @@ main {
 .btn-block { width: 100%; }
 
 .btn-primary-chat {
-  /* Warna Awal: Biru */
-  background-color: #2B6CB0; 
-  color: #ffffff;             /* Teks putih saat warna dasar biru */
-  border: 2px solid #2B6CB0;  /* Memberikan border agar tidak kaku saat berubah warna */
+  background-color: var(--primary); /* Mengikuti tema */
+  color: #ffffff;
+  border: 2px solid var(--primary);
   padding: 7px 24px;
   border-radius: 20px;
   cursor: pointer;
   font-weight: 600;
-  transition: all 0.3s ease;  /* Transisi halus agar perubahan tidak mendadak */
+  transition: all 0.3s ease;
 }
 
 .btn-primary-chat:hover {
-  background-color: #ffffff;  /* Berubah jadi putih */
-  color: #2B6CB0;             /* Teks berubah jadi biru agar tetap terbaca */
-  border-color: #2B6CB0;      /* Border tetap biru agar tombol tetap terlihat */
+  background-color: #ffffff;
+  color: var(--primary); /* Mengikuti tema */
+  border-color: var(--primary); /* Mengikuti tema */
 }
 
 .btn-primary-profil {
@@ -987,4 +1007,17 @@ footer {
   }
   
   .section-title h2 { font-size: 1.5rem; }
+}
+
+.theme-box {
+  width: 22px; 
+  height: 22px; 
+  border-radius: 4px; /* Membuat sudut sedikit membulat (bisa ubah ke 0 kalau mau kotak sempurna) */
+  border: 1px solid rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.theme-box:hover {
+  transform: scale(1.1);
 }
