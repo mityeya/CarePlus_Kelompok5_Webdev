@@ -1,0 +1,14 @@
+{
+  "name": "careplus-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed-doctor-images": "node migrate-doctor-images.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
